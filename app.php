@@ -1,6 +1,6 @@
 <?php
 
-date_default_timezone_set('Asia/Kuala_Lumpur');
+date_default_timezone_set('America/New_York');
 define('ROOT_PATH', dirname(realpath(__FILE__)) );
 define('DS', DIRECTORY_SEPARATOR);
 define('LOG_FOLDER', 'logs');
@@ -8,7 +8,7 @@ define('Version', '3.1.0');
 
 if( strtolower(php_sapi_name()) != 'cli' ) {
     printf("%s\n", "Please run only from command line interface.");
-    exit;
+    #exit;
 }
 
 require_once(ROOT_PATH . '/base/load.php');
